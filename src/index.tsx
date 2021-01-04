@@ -2,15 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeContextProvider } from '~/theme';
-
-const App = () => {
-  return <h1>Hello World</h1>;
-};
+import { Router } from '~/router';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeContextProvider>
-      <App />
+      <Router />
     </ThemeContextProvider>
   </React.StrictMode>,
   document.getElementById('root'),
