@@ -19,7 +19,7 @@ const themeContext = createContext<{
 });
 
 export const ThemeContextProvider: FC = ({ children }) => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   const switchTheme = useCallback(() => {
     setIsDark((prev) => !prev);
