@@ -29,6 +29,9 @@ module.exports = {
     project: './tsconfig.json',
   },
   rules: {
+    'jsx-a11y/accessible-emoji': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'import/extensions': 'off',
     'react/prop-types': 'off',
     'import/prefer-default-export': 'off',
